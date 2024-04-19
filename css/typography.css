@@ -5,7 +5,9 @@ body {
 
 .nav-title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
+  position: relative;
+  margin-inline-start: 8%;
 }
 
 .button-text {
