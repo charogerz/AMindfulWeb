@@ -86,6 +86,12 @@ body {
   gap: 16px;
 }
 
+.examples-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
 .examples-container {
   display: flex;
   gap: 34px 16px;
