@@ -43,19 +43,19 @@ body {
 
 
 
-/* Example Header */
+/* Page Header */
 
-#example-header {
+#page-header {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   align-items: center;
 }
 
-#example-header-text-container {
+#page-header-text-container {
   display: flex;
   flex-direction: column;
   gap: 34px;
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
 }
 
 
