@@ -4,4 +4,4 @@ A thesis project being ever iterated on by Charlotte Rogers | Parsons School of 
 
 View the project [HERE](https://charogerz.github.io/AMindfulWeb/).
 
-Accessibility options code thanks to [@ranbuch on GitHub](https://ranbuch.github.io/accessibility/site/)
+Accessibility options code thanks to [@PrabothCharith on GitHub](https://github.com/PrabothCharith/accessibility-plugin)
