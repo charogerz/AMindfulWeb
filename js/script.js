@@ -15,3 +15,7 @@ if (document.getElementById('resources-link')) {
     document.getElementById('resources-section').scrollIntoView({behavior: "smooth"})
   })
 }
+
+window.addEventListener('load', function() {
+  new Accessibility();
+}, false);
