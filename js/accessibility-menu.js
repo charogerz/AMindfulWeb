@@ -10,8 +10,8 @@ const accessibilityMenuStyles = `    :root {
 
     #accessibility-modal, #accessibility-modal * {
         transition: all 0.3s ease 0s;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 18px;
     }
 
     #accessibility-modal {
@@ -99,7 +99,7 @@ const accessibilityMenuStyles = `    :root {
 
     #accessibility-modal.bottom {
         top: auto;
-        bottom: 0;
+        bottom: 3%;
         left: 3%;
         width: 98%;
         height: auto;
@@ -284,14 +284,6 @@ const accessibilityMenuStyles = `    :root {
         filter: grayscale(1);
     }
 
-    .low-saturation {
-        filter: saturate(20%);
-    }
-
-    .high-saturation {
-        filter: saturate(200%);
-    }
-
     .underline-style-0 a {
         text-decoration: none;
         background: black !important;
@@ -387,17 +379,6 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
         </div>
 
         <div class="acc-item">
-            <div class="acc-child" id="saturation">
-                <box-icon name='color' type='solid'></box-icon>
-                <p>Low Saturation</p>
-                <div class="acc-progress-parent hidden">
-                    <div class="acc-progress-child acc-progress-child-1 active"></div>
-                    <div class="acc-progress-child acc-progress-child-2"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="acc-item">
             <div class="acc-child" id="underline">
                 <box-icon name='expand-horizontal'></box-icon>
                 <p>Links Highlight</p>
@@ -437,30 +418,6 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
             <div class="acc-child" id="letter-spacing">
                 <box-icon name='expand-horizontal'></box-icon>
                 <p>Letter Spacing</p>
-                <div class="acc-progress-parent hidden">
-                    <div class="acc-progress-child acc-progress-child-1"></div>
-                    <div class="acc-progress-child acc-progress-child-2"></div>
-                    <div class="acc-progress-child acc-progress-child-3"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="acc-item">
-            <div class="acc-child" id="text-align">
-                <box-icon name='align-left'></box-icon>
-                <p>Text Align</p>
-                <div class="acc-progress-parent hidden">
-                    <div class="acc-progress-child acc-progress-child-1"></div>
-                    <div class="acc-progress-child acc-progress-child-2"></div>
-                    <div class="acc-progress-child acc-progress-child-3"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="acc-item">
-            <div class="acc-child" id="contrast">
-                <box-icon name='brightness-half' type='solid'></box-icon>
-                <p>Contrast</p>
                 <div class="acc-progress-parent hidden">
                     <div class="acc-progress-child acc-progress-child-1"></div>
                     <div class="acc-progress-child acc-progress-child-2"></div>
@@ -525,36 +482,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector('#grayscale').addEventListener('click', () => {
         const item = document.querySelector('#grayscale');
         docElemnt.classList.toggle('grayscale');
-    });
-
-    let saturationClickCount = 0;
-    document.querySelector('#saturation').addEventListener('click', () => {
-        const item = document.querySelector('#saturation');
-        if (saturationClickCount === 2) {
-            saturationClickCount = 0;
-            item.querySelector('p').innerText = 'Low Saturation';
-            item.querySelector('.acc-progress-parent').classList.add('hidden');
-            item.classList.add('active');
-            docElemnt.classList.remove('high-saturation');
-            docElemnt.classList.remove('low-saturation');
-        } else {
-            item.classList.remove('active');
-            if (saturationClickCount === 0) {
-                docElemnt.classList.add('low-saturation');
-                item.querySelector('p').innerText = 'High Saturation';
-                item.querySelector('.acc-progress-parent').classList.remove('hidden');
-                item.querySelector('.acc-progress-child-1').classList.add('active');
-                item.querySelector('.acc-progress-child-2').classList.remove('active');
-            } else if (saturationClickCount === 1) {
-                docElemnt.classList.remove('low-saturation');
-                docElemnt.classList.add('high-saturation');
-                item.querySelector('p').innerText = 'Low Saturation';
-                item.querySelector('.acc-progress-parent').classList.remove('hidden');
-                item.querySelector('.acc-progress-child-1').classList.remove('active');
-                item.querySelector('.acc-progress-child-2').classList.add('active');
-            }
-            saturationClickCount++;
-        }
     });
 
     let underlineClickCount = 0;
@@ -699,43 +626,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 item.querySelector('.acc-progress-child-3').classList.add('active');
             }
             letterSpacingClickCount++;
-        }
-
-    });
-
-    let textAlignClickCount = 0;
-    document.querySelector('#text-align').addEventListener('click', () => {
-        const item = document.querySelector('#text-align');
-        if (textAlignClickCount === 3) {
-            textAlignClickCount = 0;
-            item.querySelector('.acc-progress-parent').classList.add('hidden');
-            item.classList.add('active');
-            docElemnt.style.textAlign = '';
-        } else {
-            item.classList.remove('active');
-            if (textAlignClickCount === 0) {
-                docElemnt.style.textAlign = 'left';
-                item.parentElement.querySelector('box-icon').setAttribute('name', 'align-left');
-                item.querySelector('.acc-progress-parent').classList.remove('hidden');
-                item.querySelector('.acc-progress-child-1').classList.add('active');
-                item.querySelector('.acc-progress-child-2').classList.remove('active');
-                item.querySelector('.acc-progress-child-3').classList.remove('active');
-            } else if (textAlignClickCount === 1) {
-                docElemnt.style.textAlign = 'center';
-                item.parentElement.querySelector('box-icon').setAttribute('name', 'align-middle');
-                item.querySelector('.acc-progress-parent').classList.remove('hidden');
-                item.querySelector('.acc-progress-child-1').classList.remove('active');
-                item.querySelector('.acc-progress-child-2').classList.add('active');
-                item.querySelector('.acc-progress-child-3').classList.remove('active');
-            } else if (textAlignClickCount === 2) {
-                docElemnt.style.textAlign = 'right';
-                item.parentElement.querySelector('box-icon').setAttribute('name', 'align-right');
-                item.querySelector('.acc-progress-parent').classList.remove('hidden');
-                item.querySelector('.acc-progress-child-1').classList.remove('active');
-                item.querySelector('.acc-progress-child-2').classList.remove('active');
-                item.querySelector('.acc-progress-child-3').classList.add('active');
-            }
-            textAlignClickCount++;
         }
 
     });
