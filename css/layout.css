@@ -29,6 +29,7 @@ body {
 
 .right {
   width: 60%;
+  padding-left: 5%;
 }
 
 /* Main Page Layout */
@@ -152,7 +153,7 @@ body {
 .resources-section-content {
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 24px;
 }
 
 /* Example Pages */
