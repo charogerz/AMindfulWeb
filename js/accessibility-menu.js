@@ -352,13 +352,13 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
     <div id="headerContent">
         <p>Accessibility Tools</p>
     </div>
+    <main>
     <div id="accessibility-tools">
 
         <div class="acc-item">
             <div class="acc-child" id="invert-colors">
                 <box-icon name='adjust' type='solid'></box-icon>
-                <br>
-                <div role="main">Invert Colors</div>
+                <p>Invert Colors</p>
                 <div class="acc-progress-parent hidden">
                     <div class="acc-progress-child acc-progress-child-1"></div>
                     <div class="acc-progress-child acc-progress-child-2"></div>
@@ -370,8 +370,7 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
         <div class="acc-item">
             <div class="acc-child" id="grayscale">
                 <box-icon name='droplet-half' type='solid'></box-icon>
-                <br>
-                <div title="grayscale button label">Grayscale</div>
+                <p>Grayscale</p>
                 <div class="acc-progress-parent hidden">
                     <div class="acc-progress-child acc-progress-child-1"></div>
                     <div class="acc-progress-child acc-progress-child-2"></div>
@@ -383,8 +382,7 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
         <div class="acc-item">
             <div class="acc-child" id="underline">
                 <box-icon name='expand-horizontal'></box-icon>
-                <br>
-                <div role="main">Links Highlight</div>
+                <p>Links Highlight</p>
                 <div class="acc-progress-parent hidden">
                     <div class="acc-progress-child acc-progress-child-1"></div>
                     <div class="acc-progress-child acc-progress-child-2"></div>
@@ -396,8 +394,7 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
         <div class="acc-item">
             <div class="acc-child" id="font-size">
                 <box-icon name='font-size'></box-icon>
-                <br>
-                <div role="main">Font Size</div>
+                <p>Font Size</p>
                 <div class="acc-progress-parent hidden">
                     <div class="acc-progress-child acc-progress-child-1"></div>
                     <div class="acc-progress-child acc-progress-child-2"></div>
@@ -409,8 +406,7 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
         <div class="acc-item">
             <div class="acc-child" id="line-height">
                 <box-icon name='expand-vertical'></box-icon>
-                <br>
-                <div role="main">Line Height</div>
+                <p>Line Height</p>
                 <div class="acc-progress-parent hidden">
                     <div class="acc-progress-child acc-progress-child-1"></div>
                     <div class="acc-progress-child acc-progress-child-2"></div>
@@ -422,8 +418,7 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
         <div class="acc-item">
             <div class="acc-child" id="letter-spacing">
                 <box-icon name='expand-horizontal'></box-icon>
-                <br>
-                <div role="main">Letter Spacing</div>
+                <p>Letter Spacing</p>
                 <div class="acc-progress-parent hidden">
                     <div class="acc-progress-child acc-progress-child-1"></div>
                     <div class="acc-progress-child acc-progress-child-2"></div>
@@ -435,12 +430,12 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
         <div class="acc-item">
             <div class="acc-child" id="hide-images">
                 <box-icon type='solid' name='landscape'></box-icon>
-                <br>
-                <div role="main">Hide image</div>
+                <p>Hide image</p>
             </div>
         </div>
 
     </div>
+    </main>
 </div><script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>`;
 document.addEventListener("DOMContentLoaded", function () {
 
