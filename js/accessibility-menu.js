@@ -358,7 +358,7 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
             <div class="acc-child" id="invert-colors">
                 <box-icon name='adjust' type='solid'></box-icon>
                 <br>
-                <div title="invert colours button label">Invert Colors</div>
+                <div role="main">Invert Colors</div>
                 <div class="acc-progress-parent hidden">
                     <div class="acc-progress-child acc-progress-child-1"></div>
                     <div class="acc-progress-child acc-progress-child-2"></div>
@@ -384,7 +384,7 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
             <div class="acc-child" id="underline">
                 <box-icon name='expand-horizontal'></box-icon>
                 <br>
-                <div title="link highlight button label">Links Highlight</div>
+                <div role="main">Links Highlight</div>
                 <div class="acc-progress-parent hidden">
                     <div class="acc-progress-child acc-progress-child-1"></div>
                     <div class="acc-progress-child acc-progress-child-2"></div>
@@ -397,7 +397,7 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
             <div class="acc-child" id="font-size">
                 <box-icon name='font-size'></box-icon>
                 <br>
-                <div title="font scale button label">Font Size</div>
+                <div role="main">Font Size</div>
                 <div class="acc-progress-parent hidden">
                     <div class="acc-progress-child acc-progress-child-1"></div>
                     <div class="acc-progress-child acc-progress-child-2"></div>
@@ -410,7 +410,7 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
             <div class="acc-child" id="line-height">
                 <box-icon name='expand-vertical'></box-icon>
                 <br>
-                <div title="line height button label">Line Height</div>
+                <div role="main">Line Height</div>
                 <div class="acc-progress-parent hidden">
                     <div class="acc-progress-child acc-progress-child-1"></div>
                     <div class="acc-progress-child acc-progress-child-2"></div>
@@ -423,7 +423,7 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
             <div class="acc-child" id="letter-spacing">
                 <box-icon name='expand-horizontal'></box-icon>
                 <br>
-                <div title="letter spacing button label">Letter Spacing</div>
+                <div role="main">Letter Spacing</div>
                 <div class="acc-progress-parent hidden">
                     <div class="acc-progress-child acc-progress-child-1"></div>
                     <div class="acc-progress-child acc-progress-child-2"></div>
@@ -436,7 +436,7 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
             <div class="acc-child" id="hide-images">
                 <box-icon type='solid' name='landscape'></box-icon>
                 <br>
-                <div title="hide image button label">Hide image</div>
+                <div role="main">Hide image</div>
             </div>
         </div>
 
