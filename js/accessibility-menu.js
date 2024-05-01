@@ -1,3 +1,5 @@
+// code open source from @PrabothCharith on GitHub
+
 const accessibilityMenuStyles = `    :root {
         --acc_color_1: #000;
         --acc_color_2: #fff;
