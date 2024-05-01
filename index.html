@@ -7,19 +7,23 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
   <link rel="manifest" href="./assets/icons/site.webmanifest">
+  <!-- title on tab when the page is open -->
   <title>A Mindful Web</title>
   <meta name="description" content="Trauma-Informed Design Education">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- connecting to chosen Google font, copied from Google Fonts page -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
+  <!-- references to css code -->
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/typography.css">
   <link rel="stylesheet" href="./css/utilities.css">
 
+  <!-- references to js code -->
   <script src="./js/accessibility-menu.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
@@ -30,10 +34,13 @@
     <!-- NAVBAR -->
     <div class="navbar" id="navbar">
       <a class="nav-title-link" href="./" tabindex="0">
+        <!-- logo in top left corner -->
         <image src="./assets/icons/navbar-img.png"
           style="display: inline; width: 6%; position: relative; float:inline-start;"
           alt="a keyboard key illustration with a head and heart outlined in the center" />
+        <!-- title of site with link to reload page -->
         <h1 class="nav-title">A Mindful Web</h1>
+        <!-- jumplink that scrolls to resources section on bottom of page, works with js code -->
         <a class="button" id="resources-link" tabindex="2">
           <span class="button-text" style="float: right;">Resources</span>
         </a>
@@ -64,6 +71,7 @@
             <div class="body-text">A thesis project being ever iterated on by Charlotte Rogers</div>
             <div class="body-text"><i>Parsons School of Design, MFA Design and Technology 2024</i></div>
           </div>
+          <!-- jumplink that scrolls to video examples on page, works with js code -->
           <a class="button" id="examples-link">
             <span class="button-text" tabindex="3">Jump To Video Examples</span>
             <image src="./assets/icons/arrow-right.svg" alt="right arrow button that says 'Jump To Video Examples'"
@@ -94,9 +102,11 @@
             working groups, published research, blogs,
             and more below.
           </div>
+          <!-- in-text mailto: link that points to my email address -->
           <div class="body-text">Any and all input on how to improve this site is appreciated! Please <a
               href="mailto:charogerz@gmail.com" tabindex="4">contact me here</a>, or find me by using
             the icons and links at the bottom of this page.</div>
+          <!-- button leading to Parson's external thesis site, with project description and paper -->
           <a class="button"
             href="https://docs.google.com/document/d/1lMx23gd1oauuxVW-ZoM9oddYp8UExU088pYYXd-sDtg/edit?usp=sharing"
             tabindex="5">
@@ -105,6 +115,7 @@
             <image src="./assets/icons/arrow-right.svg" alt="right arrow button that says 'Read the Paper'"
               class="right-arrow-icon" />
           </a>
+          <!-- jumplink that makes page scroll to More Info section below, works with js code -->
           <a class="button" id="more-info-link" tabindex="6">
             <span class="button-text">More About Trauma-Informed Design</span>
             <image src="./assets/icons/arrow-right.svg" alt="right arrow button that says 'More About TID'"
@@ -114,6 +125,7 @@
       </div>
 
       <!-- EXAMPLES SECTION -->
+      <!-- description for this section, leading into video example "cards" to separate content -->
       <div id="examples-section">
         <span class="subheader-text">Contextual Examples</span>
         <div class="exaples-section-content">
@@ -126,6 +138,7 @@
             designer better understand the ways this framework can be implemented.
           </div>
           <br>
+          <!-- button leading to external YouTube link -->
           <a class="button" href="https://www.youtube.com/playlist?list=PLoNfyak8UG--b0xioTKKzxG5z9d5XTk3e" tabindex="8">
             <span class="button-text">See Full YouTube Playlist</span>
             <image src="./assets/icons/arrow-right.svg" alt="right arrow button that says 'Full YouTube Playlist'"
@@ -133,6 +146,7 @@
           </a>
           <br><br>
         </div>
+        <!-- beginning of example video "cards", used as a way to separate content on page regardless of size -->
         <div class="examples-container">
           <div class="example-card">
             <iframe class="example-video"
@@ -318,6 +332,8 @@
             <div class="column right">- Our Wave's <a href="https://www.ourwave.org/en/developers">Escape Button</a>
             </div>
           </div>
+
+          <!-- code for each row in the 2-column setup of the resource section, commented out -->
           <!-- <div class="row" style="font-size: 1.125rem; font-weight: 500;">
             <div class="column left"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b></div>
             <div class="column right">Quisque augue lacus, hendrerit eget libero eget, pellentesque scelerisque ligula.
