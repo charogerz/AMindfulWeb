@@ -6,8 +6,16 @@ body {
   font-weight: 700;
   font-size: 1.75rem;
   position: relative;
-  margin-inline-start: 8%;
-  margin-top: 1%;
+  white-space: nowrap;
+  margin-right: 400px;
+  margin-left: 90px;
+}
+
+/* Small devices (portrait tablets and large phones, 800px and below) */
+@media only screen and (max-width: 800px) {
+  .nav-title {
+    display: none;
+  }
 }
 
 .button-text {
