@@ -57,7 +57,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 34px;
-  /* flex-basis: 50%; */
+  margin-bottom: -20px;
 }
 
 
@@ -87,7 +87,7 @@ body {
 /* Examples Section */
 
 #examples-section {
-  margin-top: -40px;
+  margin-top: -60px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -157,7 +157,7 @@ body {
 #resources-section {
   display: flex;
   flex-direction: column;
-  margin-top: -40px;
+  margin-top: -60px;
   gap: 16px;
 }
 
