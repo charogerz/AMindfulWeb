@@ -71,6 +71,7 @@ a.button {
   gap: 5px;
   align-items: center;
   text-align: center;
+  margin-left: 20px;
 }
 
 a.button:hover {
