@@ -11,6 +11,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -70,8 +71,8 @@ body {
   flex-direction: column;
   margin-top: -30px;
   background-color: rgba(102,153,204,0.45);
-  margin: 0 -500%;
-  padding: 0 500% !important;
+  margin: 0 -100%;
+  padding: 0 100% !important;
   gap: 16px;
 }
 
@@ -141,8 +142,8 @@ body {
   margin-top: -40px;
   flex-direction: column;
   background-color: rgba(102,153,204,0.45);
-  margin: 0 -500%;
-  padding: 0 500% !important;
+  margin: 0 -100%;
+  padding: 0 100% !important;
   gap: 16px;
 }
 
@@ -256,11 +257,11 @@ body {
     margin: 150px 50px;
   }
 
-  #portfolio-header {
+  #page-header {
     flex-direction: column;
   }
 
-  .project-card {
+  .example-card {
     max-width: calc((100% - 16px) / 2);
   }
 }
@@ -271,7 +272,7 @@ body {
     margin: 125px 20px;
   }
 
-  .project-card {
+  .example-card {
     max-width: 100%;
   }
 }
