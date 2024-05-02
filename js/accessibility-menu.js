@@ -348,7 +348,7 @@ const accessibilityMenuStyles = `    :root {
     }
 `;
 const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close" tabindex="1">
-    <button id="closeBtn" style="z-index: 99999;" title="Accessibility settings" aria-label="Accessibility settings">
+    <button id="closeBtn" style="z-index: 99999;" title="Accessibility settings" aria-label="Accessibility settings" tabindex="1">
         <box-icon type='solid' color='white' name='universal-access'></box-icon>
     </button>
     <div id="headerContent">
