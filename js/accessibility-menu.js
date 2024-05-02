@@ -1,4 +1,5 @@
 // code open source from @PrabothCharith on GitHub
+// https://github.com/PrabothCharith/accessibility-plugin
 
 const accessibilityMenuStyles = `    :root {
         --acc_color_1: #000;
@@ -346,6 +347,10 @@ const accessibilityMenuStyles = `    :root {
     .hide-images img {
         display: none;
     }
+
+    .hide-video video {
+        display: none;
+    }
 `;
 const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close" tabindex="1">
     <button id="closeBtn" style="z-index: 99999;" title="Accessibility settings" aria-label="Accessibility settings" tabindex="1">
@@ -429,11 +434,27 @@ const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close
             </div>
         </div>
 
+        <!--hide images-->
         <div class="acc-item">
-            <div class="acc-child" id="hide-images">
-                <box-icon type='solid' name='landscape'></box-icon>
-                <p>Hide image</p>
-            </div>
+          <div class="acc-child" id="hide-images">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.8,4L4.8,4l1,1L4.8,4z M19.7,19L19.7,19l0.8,0.8L19.7,19z" />
+              <path d="M18,7h-2c-0.5,0-1,0.5-1,1v2c0,0.5,0.5,1,1,1h2c0.5,0,1-0.5,1-1V8C19,7.5,18.5,7,18,7z M18,10h-2V8h2V10z" />
+              <path d="M22,6.5v11c0,0.6-0.2,1.1-0.6,1.6l-0.6-0.6l-0.1-0.1l-4.9-4.9l0.3-0.3c0.2-0.2,0.5-0.2,0.7,0l4.2,4.1V6.5\tC21,5.7,20.3,5,19.5,5H7.4l-1-1h13.1C20.9,4,22,5.1,22,6.5z" />
+              <path d="M1.9,1.1L1.1,1.9l2.4,2.4C2.6,4.6,2,5.5,2,6.5v11C2,18.9,3.1,20,4.5,20h14.8l2.9,2.9l0.7-0.7L1.9,1.1z M3,6.5\tC3,5.8,3.5,5.1,4.3,5l10,10l-0.8,0.8l-5.7-5.6c-0.2-0.2-0.5-0.2-0.7,0L3,14.3V6.5z M4.5,19C3.7,19,3,18.3,3,17.5v-1.8l4.5-4.5\tl5.7,5.6c0.2,0.2,0.5,0.2,0.7,0l1.1-1.1l3.3,3.3H4.5z" />
+            </svg>
+            <p>Hide image</p>
+          </div>
+        </div>
+
+        <!--hide video-->
+        <div class="acc-item">
+          <div class="acc-child" id="hide-video">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video-off" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.961 12.365a2 2 0 0 0 .522-1.103l3.11 1.382A1 1 0 0 0 16 11.731V4.269a1 1 0 0 0-1.406-.913l-3.111 1.382A2 2 0 0 0 9.5 3H4.272l.714 1H9.5a1 1 0 0 1 1 1v6a1 1 0 0 1-.144.518zM1.428 4.18A1 1 0 0 0 1 5v6a1 1 0 0 0 1 1h5.014l.714 1H2a2 2 0 0 1-2-2V5c0-.675.334-1.272.847-1.634zM15 11.73l-3.5-1.555v-4.35L15 4.269zm-4.407 3.56-10-14 .814-.58 10 14z" />
+            </svg>
+            <p>Hide video</p>
+          </div>
         </div>
 
     </div>
@@ -680,6 +701,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelector('#hide-images').addEventListener('click', () => {
         docElemnt.classList.toggle('hide-images');
+    });
+
+    document.querySelector('#hide-video').addEventListener('click', () => {
+        docElement.classList.toggle('hide-video');
     });
 
     //save the user's settings in cookies
