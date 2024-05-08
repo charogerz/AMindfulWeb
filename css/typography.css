@@ -23,6 +23,13 @@ body {
   font-weight: 700;
 }
 
+/* Small devices (portrait tablets and large phones, 800px and below) */
+@media only screen and (max-width: 800px) {
+  .button-text {
+    font-size: .8rem;
+  }
+}
+
 .image-caption {
   font-size: 0.875rem;
   font-weight: 500;

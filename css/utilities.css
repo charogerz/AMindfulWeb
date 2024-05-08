@@ -60,6 +60,7 @@ a.icon-link:hover {
   .navbar {
     padding: 10px 10px;
     background-color: white;
+    flex-wrap: wrap;
   }
 }
 
@@ -78,6 +79,13 @@ a.button {
   text-align: center;
   white-space: nowrap;
   position: relative;
+}
+
+/* Small devices (portrait tablets and large phones, 800px and below) */
+@media only screen and (max-width: 800px) {
+  a.button {
+    border: 2px solid #141414;
+  }
 }
 
 a.button:hover {
