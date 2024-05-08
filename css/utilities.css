@@ -125,6 +125,13 @@ a.button:hover {
   display: block;
 }
 
+/* Small devices (portrait tablets and large phones, 800px and below) */
+@media only screen and (max-width: 1000px) {
+  .dropdown {
+    display: none;
+  }
+}
+
 /* Footer Styling */
 
 #footer {
