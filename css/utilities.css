@@ -7,6 +7,12 @@
   margin-top: 1px;
 }
 
+.down-arrow-icon {
+  width: 10px;
+  height: 10px;
+  margin-top: 1px;
+}
+
 .footer-icon {
   width: 20px;
   height: 20px;
@@ -78,6 +84,45 @@ a.button:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   cursor: pointer;
+}
+
+.dropdown-button {
+  padding: 2px 16px;
+  border: 2px solid #141414;
+  border-radius: 40px;
+  color: black;
+  width: fit-content;
+  display: flex;
+  gap: 5px;
+  margin-left: 8px;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  cursor: help;
+}
+
+/* Dropdown Styling */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Footer Styling */
