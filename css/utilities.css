@@ -87,7 +87,7 @@ a.button:hover {
 }
 
 .dropdown-button {
-  padding: 2px 16px;
+  padding: 1px 10px;
   border: 2px solid #141414;
   border-radius: 40px;
   color: black;
