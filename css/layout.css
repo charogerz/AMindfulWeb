@@ -89,6 +89,7 @@ body {
 
 #examples-section {
   margin-top: -60px;
+  margin-bottom: -30px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -159,6 +160,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: -60px;
+  margin-bottom: -30px;
   gap: 16px;
 }
 
