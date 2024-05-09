@@ -193,9 +193,9 @@ const accessibilityMenuStyles = `    :root {
     }
 
     .acc-item {
-        min-width: 120px;
+        min-width: 100px;
         width: 33%;
-        max-width: 200px;
+        max-width: 160px;
         height: auto;
         margin: 0;
         cursor: pointer;
@@ -222,7 +222,7 @@ const accessibilityMenuStyles = `    :root {
         aspect-ratio: 1/1;
         background: var(--acc_color_2);
         border-radius: var(--border_radius);
-        margin: 10px;
+        margin: 8px;
         padding: 10px 10px 0;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border: 1px solid var(--acc_color_1);
