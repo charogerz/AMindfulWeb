@@ -1,4 +1,5 @@
-
+// Code adapted from a project by @PrabothCharith on GitHub, under a GPL-3.0 license
+// Find the original code here: https://github.com/PrabothCharith/accessibility-plugin
 
 const accessibilityMenuStyles = `    :root {
         --acc_color_1: #000;
