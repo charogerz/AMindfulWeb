@@ -353,7 +353,7 @@ const accessibilityMenuStyles = `    :root {
 
 
 `;
-const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close" tabindex="1">
+const accessibilityMenuHTML = `<div id="accessibility-modal" class="bottom close">
     <button id="closeBtn" style="z-index: 99999;" title="Accessibility settings" aria-label="Accessibility settings">
         <box-icon type='solid' color='white' name='universal-access'></box-icon>
     </button>
