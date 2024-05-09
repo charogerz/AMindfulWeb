@@ -48,7 +48,7 @@ body {
 }
 
 .body-text {
-  font-size: 1.45rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -61,7 +61,7 @@ body {
     font-size: 1.4rem;
   }
   .body-text {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
 }
 
